@@ -1,0 +1,149 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #0088a9;
+    font-size: 28px;
+    border-bottom: 2px solid #0088a9;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* Infographic Content */
+.infographic-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.step-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.step-number {
+    background-color: #0088a9;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.step-connector {
+    width: 30px;
+    height: 2px;
+    background-color: #0088a9;
+    margin-top: 25px;
+    flex-shrink: 0;
+}
+
+.step-box {
+    background-color: #e6f7fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    flex-grow: 1;
+}
+
+.step-box h2 {
+    color: #0088a9;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.step-box p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#screenshot-btn {
+    background-color: #0088a9;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#screenshot-btn:hover {
+    background-color: #006d87;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 22px;
+    }
+    
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .step-connector {
+        width: 20px;
+        margin-top: 20px;
+    }
+    
+    .step-box {
+        padding: 15px;
+    }
+    
+    .step-box h2 {
+        font-size: 16px;
+    }
+    
+    .step-box p {
+        font-size: 14px;
+    }
+}
